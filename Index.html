@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digi Order | Création de sites vitrines</title>
+<meta name="description" content="Digi Order crée des sites vitrines modernes et professionnels pour les entreprises.">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #faf8ff;
+  color: #24183b;
+}
+
+header {
+  background: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px #21143d10;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: #743bd2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #302347;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 100px 8%;
+  text-align: center;
+  background: linear-gradient(135deg,#eee4ff,#ffffff,#e8dcff);
+}
+
+.hero h1 {
+  font-size: clamp(38px,7vw,65px);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #8247df;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+  color: #625775;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #8247df;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 25px 8px 0;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #602db7;
+  transform: translateY(-3px);
+}
+
+.btn-light {
+  background: white;
+  color: #743bd2;
+  border: 1px solid #8247df;
+}
+
+section {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  color: #746987;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px #2613440c;
+  border: 1px solid #eee7fa;
+}
+
+.card .emoji {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #7138ca;
+}
+
+.card p {
+  color: #746987;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.about {
+  background: #f0eaff;
+}
+
+.about p {
+  max-width: 750px;
+  margin: auto;
+  color: #615473;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.number {
+  background: #eee4ff;
+  color: #8247df;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.contact {
+  background: linear-gradient(135deg,#7138ca,#4d268b);
+  color: white;
+}
+
+.contact p {
+  color: #eee4ff;
+  line-height: 1.8;
+}
+
+.contact .btn {
+  background: white;
+  color: #7138ca;
+}
+
+.contact .btn-light {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+footer {
+  background: #21143d;
+  color: #d9c9ef;
+  padding: 30px 8%;
+  text-align: center;
+  line-height: 2;
+  font-size: 14px;
+}
+
+@media(max-width:650px) {
+  header {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+  .hero {
+    padding: 75px 6%;
+  }
+  section {
+    padding: 60px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DIGI ORDER.</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#agence">Agence</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <h1>Votre entreprise.<br>
+  <span>Notre expertise digitale.</span></h1>
+  <p>
+    Digi Order accompagne les entreprises dans leur
+    développement numérique grâce à la création
+    de sites vitrines modernes, élégants et professionnels.
+  </p>
+  <a class="btn" href="#contact">Créer mon site internet</a>
+  <a class="btn btn-light" href="#services">Découvrir nos services</a>
+</section>
+
+<section id="services">
+  <h2>Nos services</h2>
+  <p class="subtitle">
+    Des solutions simples pour donner une présence
+    professionnelle à votre entreprise sur Internet.
+  </p>
+
+  <div class="services">
+    <div class="card">
+      <div class="emoji">🌐</div>
+      <h3>Site vitrine</h3>
+      <p>Un site professionnel pour présenter votre entreprise et vos activités.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">📱</div>
+      <h3>Design adapté</h3>
+      <p>Un site agréable à utiliser sur téléphone, tablette et ordinateur.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Design personnalisé</h3>
+      <p>Une présentation moderne qui respecte l'identité de votre entreprise.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">📩</div>
+      <h3>Contact simplifié</h3>
+      <p>Des moyens de contact accessibles pour faciliter les échanges avec vos clients.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="agence">
+  <h2>Qui sommes-nous ?</h2>
+  <p>
+    Digi Order est une agence spécialisée dans la création
+    de sites vitrines pour les professionnels.
+    Notre mission est de permettre à chaque entreprise
+    de bénéficier d'une présence en ligne moderne,
+    claire et accessible.
+    <br><br>
+    Nous croyons qu'un bon site internet doit être
+    esthétique, simple à utiliser et adapté à chaque activité.
+  </p>
+</section>
+
+<section>
+  <h2>Comment ça marche ?</h2>
+  <p class="subtitle">Un accompagnement simple en trois étapes.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="number">1</div>
+      <h3>Votre projet</h3>
+      <p>Vous nous présentez votre entreprise et vos besoins.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">2</div>
+      <h3>Création</h3>
+      <p>Nous concevons votre site vitrine personnalisé.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">3</div>
+      <h3>Mise en ligne</h3>
+      <p>Votre site est prêt à être présenté à vos clients.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Parlons de votre projet !</h2>
+  <p>
+    Vous souhaitez créer un site vitrine pour votre entreprise ?
+    Contactez Digi Order et discutons de votre projet.
+  </p>
+
+  <a class="btn"
+  href="https://wa.me/33751213721?text=Bonjour%20Digi%20Order%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20vitrine%20pour%20mon%20entreprise."
+  target="_blank">
+    Contacter sur WhatsApp
+  </a>
+
+  <a class="btn btn-light"
+  href="sms:+33751213721?body=Bonjour%20Digi%20Order%2C%20je%20souhaite%20des%20informations%20sur%20la%20cr%C3%A9ation%20d'un%20site%20vitrine.">
+    Envoyer un SMS
+  </a>
+</section>
+
+<footer>
+  <div class="logo" style="color:white">DIGI ORDER.</div>
+  Création de sites vitrines professionnels.
+  <br>
+  © 2026 Digi Order - Tous droits réservés.
+</footer>
+
+</body>
+    </html>
+    
